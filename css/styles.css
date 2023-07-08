@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #252525;
+    background-color: #f3f3f3;
+}
+
+nav {
+    padding: 20px 40px;
+    margin: 0 auto;
+    color: #4A55A2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    transition: all .3s ease;
+}
+
+a:hover {
+    color: #7895CB;
+}
+
+.nav__links {
+    /* border: 1px solid gold; */
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: space-around;
+}
+
+button {
+    border: 1px solid #4A55A2;
+    padding: 7px 16px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: #4A55A2;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.nav__btn:hover {
+    background-color: #4a55a2;
+    color: #FFFFFF;
+}
+
+.menu {
+    display: none;
+}
+
+/* Main */
+main {
+    /* border: 1px solid brown; */
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main__img {
+    /* width: 20%; */
+    border-radius: 50%;
+    height: 40%;
+    /* object-fit: cover; */
+    margin-top: 60px;
+    transition: all .3s ease;
+}
+
+.main__img:hover {
+    transform: scale(1.1);
+}
+
+.main__header {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.sub__header {
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.btn__container {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.main__btn {
+    margin: 0 20px;
+    width: 350px;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 800px) {
+    .menu {
+        display: block !important;
+    }
+
+    .nav__btn {
+        visibility: hidden;
+    }
+
+    .nav__link {
+        visibility: hidden;
+    }
+
+    .btn__container {
+        flex-direction: column;
+    }
+
+    main {
+        height: 120vh;
+
+    }
+
+    .main__btn {
+        margin: 10px 0;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .nav__link {
+        display: none;
+    }
+}
+
